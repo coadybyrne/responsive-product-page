@@ -29,21 +29,11 @@ body {
   margin: 0 auto;
 }
 
-nav ul li a:link, 
-nav ul li a:visited {
-    color: #000;
-    text-decoration: none;
-}
-
-nav ul li a:hover,
-nav ul li a:focus {
-    color: #c20e0e;
-}
-
 #header > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 3em;
 }
 
 nav ul {
@@ -53,6 +43,18 @@ nav ul {
 
 nav ul li {
     padding-left: 1.25em;
+    text-transform: uppercase;
+}
+
+nav ul li a:link, 
+nav ul li a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    color: #c20e0e;
 }
 
 img {
