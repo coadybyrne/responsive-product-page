@@ -31,20 +31,20 @@ body {
 }
 
 .wrapper {
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
 h1 {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-lg);
   font-weight:600;
   margin-bottom: 0;
 }
 
 h2 {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-md);
   text-align: center;
-  margin-top: 7rem;
+  margin-top: 3rem;
 }
 
 #bodycopy {
@@ -52,8 +52,9 @@ h2 {
 }
 
 #limited {
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-sm);
   font-weight: bold;
+  text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -63,23 +64,42 @@ h2 {
   margin-top: 0;
 }
 
+.product-shot {
+  border-radius: 0.5rem;
+}
+
+#sample-one {
+  border-radius: 3%;
+}
+
+#what-people-say {
+  background-color: #000;
+  color: #fff;
+
+}
+
+#saying {
+  padding-top: 2rem;
+}
+
 #quote-grid {
   display: grid;
   grid-template-columns: 1fr;
-  margin-top:  2.5em;
-  margin-bottom:3em;
+  margin-top: 2em;
   gap: 1em;
+padding-bottom:2rem;
 }
 
 blockquote {
   max-width: 20rem;
   margin: auto;
+  margin-top: 1.2em;
+  margin-bottom: 1em;
 }
 
-i {
+.quote-italics {
   max-width: 20em;
   margin-left: 8.5em;
-
 }
 
 #top-bar {
@@ -151,9 +171,13 @@ img {
   gap: 1em;
 }
 
+#cream-grid img {
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+
 #cream-grid div {
-  border-radius: 20%;
-  padding: 2em 0;
+  border-radius: 5%;
   text-align: center;
   margin-top: 0;
 }
@@ -163,7 +187,7 @@ img {
 }
 
 footer {
-  margin-top: 5em;
+  margin-top: 3rem;
   margin-bottom: 2em;
   text-align: center;
 }
