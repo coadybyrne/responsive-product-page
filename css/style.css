@@ -35,14 +35,10 @@ body {
   margin: auto;
 }
 
-section {
-max-width: 768px;  
-margin: auto;
-}
-
 #what-people-say {
   background-color: #000;
   color: #fff;
+  padding: 0%;
 }
 
 h1 {
@@ -90,7 +86,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 3em;
+    margin-bottom: 3rem;
 }
 
 nav ul {
@@ -139,7 +135,7 @@ img {
   "image1 image1 image1"
   "image2 image3 image4";
   margin: auto;
-  gap: 1em;
+  gap: 1rem;
 }
 
 #sample-one {
@@ -161,28 +157,28 @@ img {
 #quote-grid {
   display: grid;
   grid-template-columns: 1fr;
-  margin-top: 2em;
-  gap: 1em;
+  margin-top: 2rem;
+  gap: 1rem;
 padding-bottom:2rem;
 }
 
 blockquote {
   max-width: 20rem;
   margin: auto;
-  margin-top: 1.2em;
-  margin-bottom: 1em;
+  margin-top: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .quote-italics {
-  max-width: 20em;
+  max-width: 20rem;
   margin: auto;
 }
 
 #cream-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top:  2.5em;
-  gap: 1em;
+  margin-top:  2.5rem;
+  gap: 1rem;
 }
 
 #cream-grid img {
@@ -203,16 +199,13 @@ blockquote {
 
 footer {
   margin-top: 3rem;
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
 @media (min-width: 768px){
 
-  section {
-    max-width: 900px;  
-    margin: auto;
-    }
+
 
     #sample-grid {
       display: grid;
@@ -226,27 +219,45 @@ footer {
     #quote-grid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      margin-top: 2em;
-      gap: 1em;
+      margin-top: 2rem;
+      gap: 1rem;
     padding-bottom:2rem;
     }
   
     blockquote {
       max-width: 20rem;
       margin: auto;
-      margin-top: 1.2em;
-      margin-bottom: 1em;
+      margin-top: 1.2rem;
+      margin-bottom: 1rem;
     }
     
     #cream-grid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      margin-top:  2.5em;
-      gap: 1em;
+      margin-top:  2.5rem;
+      gap: 1rem;
     }
 
-  }
+}
 
 @media (min-width: 900px){
+
+
+#product-samples {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 900px;  
+  margin: auto;
+}
+  
+#dough-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top:  2.5rem;
+  gap: 1rem;
+}
+
+    
 
 }
