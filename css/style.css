@@ -27,12 +27,22 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: auto;
 }
 
 .wrapper {
-  max-width: 500px;
-  margin: 0 auto;
+  max-width: 1200px;
+  margin: auto;
+}
+
+section {
+max-width: 768px;  
+margin: auto;
+}
+
+#what-people-say {
+  background-color: #000;
+  color: #fff;
 }
 
 h1 {
@@ -72,34 +82,8 @@ h2 {
   border-radius: 3%;
 }
 
-#what-people-say {
-  background-color: #000;
-  color: #fff;
-
-}
-
 #saying {
   padding-top: 2rem;
-}
-
-#quote-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-top: 2em;
-  gap: 1em;
-padding-bottom:2rem;
-}
-
-blockquote {
-  max-width: 20rem;
-  margin: auto;
-  margin-top: 1.2em;
-  margin-bottom: 1em;
-}
-
-.quote-italics {
-  max-width: 20em;
-  margin-left: 8.5em;
 }
 
 #top-bar {
@@ -139,12 +123,22 @@ img {
   max-width: 100%;
 }
 
+#button {
+  background-color: #000;
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  display: inline-block;
+  border-radius: 5%;
+}
+
 #sample-grid {
   display: grid;
   grid-template-areas: 
   "image1 image1 image1"
   "image2 image3 image4";
-  margin-top:  2.5em;
+  margin: auto;
   gap: 1em;
 }
 
@@ -164,6 +158,26 @@ img {
   grid-area: image4;
 }
 
+#quote-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 2em;
+  gap: 1em;
+padding-bottom:2rem;
+}
+
+blockquote {
+  max-width: 20rem;
+  margin: auto;
+  margin-top: 1.2em;
+  margin-bottom: 1em;
+}
+
+.quote-italics {
+  max-width: 20em;
+  margin: auto;
+}
+
 #cream-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -180,6 +194,7 @@ img {
   border-radius: 5%;
   text-align: center;
   margin-top: 0;
+  background-color: #fafafac9;
 }
 
 #cream-grid h3 {
@@ -190,4 +205,48 @@ footer {
   margin-top: 3rem;
   margin-bottom: 2em;
   text-align: center;
+}
+
+@media (min-width: 768px){
+
+  section {
+    max-width: 900px;  
+    margin: auto;
+    }
+
+    #sample-grid {
+      display: grid;
+      grid-template-areas: 
+      "image1 image2"
+      "image3 image4";
+      margin: auto;
+      gap: 1em;
+    }
+
+    #quote-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-top: 2em;
+      gap: 1em;
+    padding-bottom:2rem;
+    }
+  
+    blockquote {
+      max-width: 20rem;
+      margin: auto;
+      margin-top: 1.2em;
+      margin-bottom: 1em;
+    }
+    
+    #cream-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin-top:  2.5em;
+      gap: 1em;
+    }
+
+  }
+
+@media (min-width: 900px){
+
 }
